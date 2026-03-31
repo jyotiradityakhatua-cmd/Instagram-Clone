@@ -2,6 +2,8 @@ from fastapi import APIRouter, HTTPException
 from app.services.auth_servuce import create_user
 from app.services.auth_servuce import login_user
 
+from database.connection import db
+
 router = APIRouter()
 
 @router.post("/register")

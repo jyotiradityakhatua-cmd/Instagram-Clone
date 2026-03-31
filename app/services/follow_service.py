@@ -1,4 +1,4 @@
-from app.database.collection import users_collection
+from app.database.collection import user_collection
 
 def follow_user(current_username, target_username):
     if current_username == target_username:
